@@ -31,3 +31,21 @@ const myAge = 33;
 const coder = true;
 const message = "Hello, my name is " + myName + ", I am " + myAge + " years old and I can code JavaScript: " + coder + "."
 console.log(message);
+
+
+// JSON
+let user= {
+    firstName: "Radka",
+    age: 33
+}
+
+let userJSON = JSON.stringify(user)
+console.log(userJSON)
+localStorage.setItem("user", userJSON)
+
+let userFromLS = localStorage.getItem("user")
+let myUser = JSON.parse(userJSON)
+console.log(myUser)
+
+console.log(`Hi, I am ${myUser.firstName} and I am ${myUser.age} years old`)
+
