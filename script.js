@@ -47,5 +47,5 @@ let userFromLS = localStorage.getItem("user")
 let myUser = JSON.parse(userJSON)
 console.log(myUser)
 
-console.log(`Hi, I am ${myUser.firstName} and I am ${myUser.age} years old`)
+console.log(`Hi, I am ${myUser.firstName} and I am ${myUser.age} years old `)
 
