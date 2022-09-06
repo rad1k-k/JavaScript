@@ -49,3 +49,26 @@ console.log(myUser)
 
 console.log(`Hi, I am ${myUser.firstName} and I am ${myUser.age} years old `)
 
+
+
+
+//FUNKTION
+let adultChecker = function(age) {
+    if(age >= 18) {
+        let result = "Erwachsene"
+        return result
+    } else {
+        let result = "Kind"
+        return result
+    }
+}
+
+let value = adultChecker(17)
+
+if(value === "Erwachsene") {
+    console.log("Age control result: " + value)
+    console.log("You can enter")
+} else {
+    console.log("Age control result: " + value)
+    console.log("You can´t enter")
+}
