@@ -72,3 +72,11 @@ if(value === "Erwachsene") {
     console.log("Age control result: " + value)
     console.log("You can´t enter")
 }
+
+
+// TEMPLATE STRING
+let firstName = "Radka"
+let secondName = "Krenova"
+let age = 33
+
+console.log(`Hi, my name is ${firstName} ${secondName} and I´m ${age} years old.`)
